@@ -26,4 +26,4 @@ mongoose helps us to build the model for the application and we can define it in
 ###################################################################################################################################
 
 
-
+we use git ignore generators to generate the file that we need to add in git ignore
