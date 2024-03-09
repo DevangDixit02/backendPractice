@@ -1,0 +1,29 @@
+//Get requet is mostly sent by the user and the server sends respond to the request sent by the client. the server is made by express  and server listens to the request "/ " is used for navigating routes
+
+// npm init is udsed to intialize the node application
+
+// in package.json file we have script int which we write the script to run the ibdex file which could be used by npm run start
+
+/* 
+express works on only 2 thing req and res, get 
+
+we use .env package as in runtime we dont know what port or other things are there in the peoples computer so we use environment variable 
+
+
+for prodution we intially push the data on github and then push it to any cloud services and then the cloud services gives the url for the the uses of the app in that we also set the environment variable such as port and all
+
+we use gitignore to not push the file that is not required 
+
+while using the import express we need to change the type in the package.json file to module 
+
+for handling api we use the JSON formatter website to se the formated json file
+
+
+mongoose helps us to build the model for the application and we can define it in object form and also key value pair could be object too and it helps us detialify the model, also we can add detail in form of array
+
+
+
+###################################################################################################################################
+
+
+
