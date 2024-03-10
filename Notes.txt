@@ -32,3 +32,7 @@ controllers are used to write fuctionalities and db is used for Databases and mi
 
 for DB always use try catch ; DB be is always in another continent - use async awake
 
+cors is used for cross orgin connecction and we dont use app. get we use app.use
+
+in express we set diiferent app.use statement for getting the data in different formats
+there is not just res,req but also next and err for middlewares
