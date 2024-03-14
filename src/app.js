@@ -4,25 +4,33 @@ import cors from 'cors';
 
 const app = express();
 app.use(
-    cors({
-        orgin: process.env.CORS_ORIGIN,
-        credentials: true,
-    })
+  cors({
+    orgin: process.env.CORS_ORIGIN,
+    credentials: true,
+  })
 );
 
 app.use(
-    express.json({
-        limit: '16kb',
-    })
+  express.json({
+    limit: '16kb',
+  })
 );
 
 app.use(
-    express.urlencoded({
-        extended: true,
-        limit: '16kb',
-    })
+  express.urlencoded({
+    extended: true,
+    limit: '16kb',
+  })
 );
+
+// routes
+
+import userRouter from './routes/user.routes.js';
+
+// routes decalartion
+
+app.use('/api/v1/users', userRouter);
 
 app.use(express.static('public'));
-app.use(cookieParser())
+app.use(cookieParser());
 export { app };
